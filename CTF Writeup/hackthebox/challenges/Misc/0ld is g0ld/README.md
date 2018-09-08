@@ -1,2 +1,2 @@
-# 0ld is g0ld
+# 0ld is g0ld (Writeup)
 
