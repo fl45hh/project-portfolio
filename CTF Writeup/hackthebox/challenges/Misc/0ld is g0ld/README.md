@@ -1,2 +1,47 @@
 # 0ld is g0ld (Writeup)
 
+Started with finding **how to view password in strings pdf**.
+
+![syntax](/writeup/1.PNG)
+
+To view that pdf file with grab the **"/U"** for get user hash password by applied following command:
+
++ strings 0ld\ is\ g0ld.pdf | grep "/U"
+
+![strings](/writeup/2.PNG)
+
+**John-The-Ripper** that can crack the hash value by brute forcing the wordlists
+
+To crack the PDF file for get the **hash value** by applied following command:
+
++ ./pdf2john.pl /home/user/Desktop/0ld\ is\ g0ld.pdf > PDFHash.hash
+
+![PDFfile](/writeup/3.PNG)
+
+To crack the hash value for get the **password** by applied following command:
+
++ john --wordlist=/home/user/Desktop/rockyou.txt /home/user/Desktop/PDFHash.hash
+
+![Hash](/writeup/4.PNG)
+
+The PDF sucessfully open.
+
+![open](/writeup/5.PNG)
+
+To fine the hint in the PDF file by right click and click **Read aloud**
+
+![read](/writeup/6.PNG)
+
+Something fishy viewed in the PDF viewer
+
+![fishy](/writeup/7.PNG)
+
+The **Morse Code** language formatted.
+
+![code](/writeup/8.PNG)
+
+Convert the morse code to text to view the **Flag**
+
+![Flag](/writeup/9.PNG)
+
+HTB{r1psamu31m0rs3}
