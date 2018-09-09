@@ -45,3 +45,4 @@ Convert the morse code to text to view the **Flag**
 <img src="writeup/9.PNG" width="500px">
 
 HTB{r1psamu31m0rs3}
+**TIMEQUARTZER**
